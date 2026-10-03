@@ -1,30 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>赶紧上号-三角洲</title>
 <style>
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}
-body{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;background:#080b0a;color:#f2f1e9}
-.bg{position:fixed;inset:0;background:linear-gradient(135deg,rgba(5,8,7,.97),rgba(14,18,15,.82)),repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.018) 4px)}
-.grid{position:absolute;inset:-20%;background-image:linear-gradient(rgba(170,180,140,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(170,180,140,.08) 1px,transparent 1px);background-size:55px 55px;transform:perspective(600px) rotateX(58deg) scale(1.4);transform-origin:center bottom;opacity:.35}
-.scan{position:absolute;left:0;right:0;height:2px;top:-5px;background:rgba(202,213,149,.45);box-shadow:0 0 18px rgba(202,213,149,.6);animation:scan 5s linear infinite}
-@keyframes scan{to{top:105%}}
-.wrap{position:relative;z-index:2;width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:30px}
-.card{width:min(900px,94vw);padding:72px 50px 64px;text-align:center;border:1px solid rgba(210,218,173,.28);background:rgba(12,16,14,.72);box-shadow:0 25px 80px rgba(0,0,0,.55),inset 0 0 50px rgba(180,190,140,.035);backdrop-filter:blur(8px);position:relative}
-.card:before,.card:after{content:"";position:absolute;width:22px;height:22px;border-color:#c5cf8c;border-style:solid;opacity:.75}
-.card:before{left:-1px;top:-1px;border-width:2px 0 0 2px}.card:after{right:-1px;bottom:-1px;border-width:0 2px 2px 0}
-.tag{font-size:13px;letter-spacing:5px;color:#aeb79b;margin-bottom:26px}
-h1{margin:0;font-size:clamp(42px,8vw,86px);line-height:1.05;letter-spacing:6px;font-weight:900;color:#eeeeda;text-shadow:0 0 25px rgba(205,213,158,.12)}
-h1 span{color:#c5cf8c}.sub{margin:25px 0 38px;color:#9ea79a;font-size:15px;letter-spacing:3px}
-.btn{display:inline-block;padding:15px 42px;border:1px solid #aeb87c;color:#dfe5bf;text-decoration:none;letter-spacing:3px;background:rgba(165,178,104,.08);transition:.25s}
-.btn:hover{background:#aeb87c;color:#11150f;box-shadow:0 0 30px rgba(174,184,124,.25)}
-.corner{position:absolute;top:18px;right:20px;font-size:11px;color:#687164;letter-spacing:2px}
-.bottom{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:#51594f;font-size:11px;letter-spacing:2px}
-@media(max-width:600px){.card{padding:55px 22px}h1{letter-spacing:2px}}
-</style>
-</head>
-<body><div class="bg"></div><div class="grid"></div><div class="scan"></div>
-<div class="wrap"><main class="card"><div class="corner">D.O. // ONLINE</div><div class="tag">DELTA FORCE · READY</div><h1>赶紧上号<span>-三角洲</span></h1><div class="sub">装备检查完毕 · 等你上线</div><a class="btn" href="#" onclick="alert('赶紧上号！');return false;">立即上号</a></main></div>
-<div class="bottom">SYSTEM READY // 赶紧上号</div></body></html>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}body{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;background:#080b0a;color:#f2f1e9}
+.bg{position:fixed;inset:0;background:linear-gradient(135deg,rgba(5,8,7,.97),rgba(14,18,15,.82)),repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.018) 4px)}.grid{position:absolute;inset:-20%;background-image:linear-gradient(rgba(170,180,140,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(170,180,140,.08) 1px,transparent 1px);background-size:55px 55px;transform:perspective(600px) rotateX(58deg) scale(1.4);transform-origin:center bottom;opacity:.35}.scan{position:absolute;left:0;right:0;height:2px;top:-5px;background:rgba(202,213,149,.45);box-shadow:0 0 18px rgba(202,213,149,.6);animation:scan 5s linear infinite}@keyframes scan{to{top:105%}}
+.wrap{position:relative;z-index:2;width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:30px}.card{width:min(1000px,94vw);padding:72px 40px 64px;text-align:center;border:1px solid rgba(210,218,173,.28);background:rgba(12,16,14,.72);box-shadow:0 25px 80px rgba(0,0,0,.55),inset 0 0 50px rgba(180,190,140,.035);backdrop-filter:blur(8px);position:relative;overflow:hidden}.card:before,.card:after{content:"";position:absolute;width:22px;height:22px;border-color:#c5cf8c;border-style:solid;opacity:.75}.card:before{left:-1px;top:-1px;border-width:2px 0 0 2px}.card:after{right:-1px;bottom:-1px;border-width:0 2px 2px 0}
+.tag{font-size:13px;letter-spacing:5px;color:#aeb79b;margin-bottom:26px}.title{position:relative;margin:0;min-height:1.1em;font-size:clamp(42px,8vw,86px);line-height:1.05;letter-spacing:6px;font-weight:900;color:#eeeeda;white-space:nowrap}.char{display:inline-block;opacity:0;position:relative}.char.show{opacity:1;animation:enter .12s steps(2,end),violent .28s .03s}@keyframes enter{0%{opacity:0;transform:translateX(-22px) skewX(20deg)}50%{opacity:1}100%{transform:none}}@keyframes violent{0%,100%{text-shadow:none;filter:none}18%{transform:translateX(-10px) skewX(-16deg);text-shadow:-10px 0 #b9ffb0,10px 0 #ff315b}35%{transform:translateX(14px) skewX(13deg);clip-path:inset(0 0 55% 0)}52%{transform:translateX(-16px);clip-path:inset(45% 0 0 0);text-shadow:11px 0 #b9ffb0,-11px 0 #ff315b}72%{transform:translateX(7px) skewX(-9deg)}}
+.title.glitch{animation:wholeGlitch .42s steps(2,end)}@keyframes wholeGlitch{0%,100%{transform:none}12%{transform:translateX(-15px);text-shadow:13px 0 #b9ffb0,-13px 0 #ff315b}28%{transform:translateX(18px) skewX(6deg)}45%{transform:translateX(-9px);clip-path:inset(20% 0 35% 0)}63%{transform:translateX(12px);clip-path:inset(60% 0 0 0)}80%{transform:translateX(-5px);text-shadow:-8px 0 #b9ffb0,8px 0 #ff315b}}
+.sub{margin:25px 0 38px;color:#9ea79a;font-size:15px;letter-spacing:3px}.btn{display:inline-block;padding:15px 42px;border:1px solid #aeb87c;color:#dfe5bf;text-decoration:none;letter-spacing:3px;background:rgba(165,178,104,.08);transition:.25s}.btn:hover{background:#aeb87c;color:#11150f;box-shadow:0 0 30px rgba(174,184,124,.25)}.corner{position:absolute;top:18px;right:20px;font-size:11px;color:#687164;letter-spacing:2px}.bottom{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:#51594f;font-size:11px;letter-spacing:2px}.noise{position:absolute;inset:0;pointer-events:none;opacity:0;background:repeating-linear-gradient(0deg,transparent 0 2px,rgba(255,255,255,.12) 3px 4px);mix-blend-mode:screen}.card.hit .noise{animation:noise .25s steps(2)}@keyframes noise{0%,100%{opacity:0}20%,55%{opacity:.55}}@media(max-width:600px){.card{padding:55px 12px}.title{letter-spacing:2px;font-size:clamp(32px,10vw,58px)}}
+</style></head><body><div class="bg"></div><div class="grid"></div><div class="scan"></div><div class="wrap"><main class="card" id="card"><div class="noise"></div><div class="corner">D.O. // ONLINE</div><div class="tag">DELTA FORCE · READY</div><h1 class="title" id="title" aria-label="赶紧上号-三角洲"></h1><div class="sub">装备检查完毕 · 等你上线</div><a class="btn" href="#" onclick="alert('赶紧上号！');return false;">立即上号</a></main></div><div class="bottom">SYSTEM READY // 赶紧上号</div>
+<script>
+const title=document.getElementById('title'),card=document.getElementById('card'),text='赶紧上号-三角洲';[...text].forEach(c=>{const s=document.createElement('span');s.className='char';s.textContent=c;s.style.color=c==='-'?'#c5cf8c':'';title.appendChild(s)});const chars=[...title.children];chars.forEach((el,i)=>setTimeout(()=>el.classList.add('show'),i*145));setTimeout(()=>setInterval(()=>{title.classList.add('glitch');card.classList.add('hit');setTimeout(()=>{title.classList.remove('glitch');card.classList.remove('hit')},430)},2300),text.length*145+900);
+</script></body></html>
